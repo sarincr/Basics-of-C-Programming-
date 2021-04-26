@@ -5,15 +5,14 @@ public class ProgramClass
 {
 	public static void Main()
 	{
-		var x = new List<int>();
-		x.Add(1);
-		x.Add(10);
-		x.Add(3);
-		x.Add(9);
+		List<string> lst = new List<string>();
+		lst.Add("John");
+		lst.Add("Adam");
+		lst.Add("George");
 		int i = 0;
-		foreach(int j in x)
+		foreach(string j in lst)
         {
-            Console.Write("At Position {0}: ", i);
+            Console.Write("Name {0}: ", i);
             Console.WriteLine(j);
             i++;
         }
